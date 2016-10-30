@@ -39,7 +39,7 @@ module turbidimeter_center(){
             translate ([wall_width-collar_width, wall_width-collar_width, wall_width]) 
                 cube([cuvette_width+2*collar_width,cuvette_width+2*collar_width, height+collar_height]);
         }
-        translate ([wall_width, wall_width, wall_width]) 
+        translate ([wall_width, wall_width, wall_width/2]) 
             cube([cuvette_width,cuvette_width, height+ collar_height+2]);
         translate([cuvette_width/2 + wall_width,0,height/2]) rotate([90,0,0]) 
             cylinder(d=hole_width, h = 100, center=true);
